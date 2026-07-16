@@ -8,11 +8,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
 
     <!-- Open Graph / WhatsApp Preview -->
-    <meta name="description" content="הצעת מחיר | OMNI x DELTA - יום צילום מלא ו-4 רילסים ערוכים">
+    <meta name="description" content="הצעת מחיר | OMNI x DELTA - יום צילום מלא וארבעה סרטונים ערוכים">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="OMNI Agency">
     <meta property="og:title" content="OMNI x DELTA - Production Day Proposal">
-    <meta property="og:description" content="הצעת מחיר ליום צילום מלא עבור Delta">
+    <meta property="og:description" content="יום צילום מלא, ארבעה סרטונים ערוכים ו-50 - 100 תמונות סטילס ערוכות עבור Delta">
     <meta property="og:image" content="https://omni-agency.github.io/proposal-delta/og-image.png?v=1">
     <meta property="og:image:secure_url" content="https://omni-agency.github.io/proposal-delta/og-image.png?v=1">
     <meta property="og:image:type" content="image/png">
@@ -23,7 +23,7 @@
     <meta property="og:locale" content="he_IL">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="OMNI x DELTA - Production Day Proposal">
-    <meta name="twitter:description" content="הצעת מחיר ליום צילום מלא עבור Delta">
+    <meta name="twitter:description" content="יום צילום מלא, ארבעה סרטונים ערוכים ו-50 - 100 תמונות סטילס ערוכות עבור Delta">
     <meta name="twitter:image" content="https://omni-agency.github.io/proposal-delta/og-image.png?v=1">
 
     <style>
@@ -660,20 +660,37 @@
             padding:.6rem 1.5rem; border-radius:14px;
             font-family:'Jost',sans-serif;
             font-size:1.3rem; font-weight:700;
+            display:inline-flex;
+            align-items:baseline;
+            gap:.62rem;
+            direction:ltr;
+        }
+        .production-price-tag .price-lockup {
+            display:inline-flex;
+            align-items:baseline;
+            gap:.32rem;
+            white-space:nowrap;
+            direction:ltr;
+            unicode-bidi:isolate;
         }
         .production-price-tag .vat-note {
             font-size:.48em;
             font-weight:500;
             opacity:.88;
-            margin-left:.25rem;
             white-space:nowrap;
+            display:inline-flex;
+            flex-direction:row;
+            align-items:baseline;
+            gap:.14rem;
+            direction:ltr;
+            unicode-bidi:isolate;
         }
         .production-price-tag .old-price {
             font-size:.62em;
             font-weight:500;
             opacity:.65;
             text-decoration:line-through;
-            margin-right:.55rem;
+            white-space:nowrap;
         }
         .production-desc {
             font-size:.93rem; color:var(--text-light); line-height:1.6;
@@ -1166,7 +1183,7 @@
 <!-- Nav -->
 <nav class="nav" id="navbar">
     <div class="nav-inner">
-        <a href="#offer" class="nav-link">הצעה</a>
+        <a href="#proposal" class="nav-link">ההצעה</a>
         <a href="#signature" class="nav-link">חתימה</a>
     </div>
 </nav>
@@ -1178,37 +1195,53 @@
         <img src="logo.png" alt="OMNI" class="hero-logo-img">
     </div>
     <div class="hero-scroll">
-        <a href="#offer">
+        <a href="#proposal">
             <div class="scroll-arrow"></div>
         </a>
     </div>
 </section>
 
-<!-- Offer -->
+<!-- Proposal -->
 <div class="snap-section bg-beige">
-<section class="section" id="offer" style="max-width:1100px;">
+<section class="section" id="proposal" style="max-width:1100px;">
     <div class="reveal">
         <div class="section-header">
             <span class="section-number">01</span>
-            <h2 class="section-title">הצעת מחיר</h2>
-            <p class="section-subtitle">יום צילום מלא עבור Delta</p>
+            <h2 class="section-title">הצעת מחיר - יום צילום</h2>
+            <p class="section-subtitle">יום צילום מלא לחברת Delta</p>
             <div class="section-line"></div>
         </div>
-        <div class="modular-grid single-module">
-            <div class="module-card featured reveal">
-                <div class="module-eyebrow">Full production day</div>
-                <div class="module-title">יום צילום מלא</div>
-                <p class="module-desc">יום צילום עבור חברת Delta, ביום חמישי 23/7, לטובת יצירת תוצרי וידאו ערוכים ומדויקים לשימוש בסושיאל.</p>
-                <div class="module-price"><span class="price-lockup"><span class="vat-note" dir="ltr" aria-label="+ מע״מ"><span>+</span><span dir="rtl">מע״מ</span></span><span class="current-price">₪5,990</span></span><span class="old-price">₪7,000</span></div>
-                <ul class="feature-list">
-                    <li><strong>תאריך צילום</strong> - 23/7, יום חמישי</li>
-                    <li><strong>יום מלא</strong> - 10-12 שעות צילום</li>
-                    <li><strong>4 רילסים ערוכים</strong> - עריכת תוצרים קצרים ומוכנים לפרסום</li>
-                </ul>
+
+        <div class="card vision-card" style="margin-bottom:1.2rem;">
+            <p class="vision-text" style="font-size:.95rem; line-height:1.8;">
+                <strong>פרטי יום הצילום:</strong>
+                &nbsp;&nbsp;תאריך: 23/7
+                &nbsp;|&nbsp; יום: חמישי
+                &nbsp;|&nbsp; היקף: יום מלא, 10-12 שעות
+            </p>
+        </div>
+
+        <div class="production-card">
+            <div class="production-header">
+                <div>
+                    <div class="production-title">חבילת יום צילום - הפקת תוכן</div>
+                    <p style="font-size:.88rem;color:var(--text-light);">וידאו ותמונות לרשתות החברתיות</p>
+                </div>
+                <div class="production-price-tag"><span class="price-lockup"><span class="vat-note" dir="ltr" aria-label="+ מע״מ"><span>+</span><span dir="rtl">מע״מ</span></span><span class="current-price">₪5,990</span></span><span class="old-price">₪7,000</span></div>
             </div>
+            <ul class="feature-list">
+                <li><strong>הכנה ותיאום ציפיות</strong> - שיחת בריף לדיוק המסרים והדגשים החשובים לצילום</li>
+                <li><strong>בניית קונספט ויזואלי</strong> - לסרטון בהתאם לצורך</li>
+                <li><strong>יום צילום בפועל</strong> - 10-12 שעות צילום</li>
+                <li><strong>ארבעה סרטונים ערוכים</strong> - באורך ובפורמט מותאמים לרשתות החברתיות על פי הבריף של הלקוח</li>
+                <li><strong>50 - 100 תמונות סטילס ערוכות</strong> - תמונות ממהלך ההפקה</li>
+                <li><strong>צילום מקצועי</strong> - באמצעות מצלמה מקצועית</li>
+            </ul>
+            <p style="margin-top:1.2rem; font-size:.78rem; color:var(--text-light); text-align:center;">* הצעת מחיר זו תקפה למשך 7 ימים מיום שליחתה</p>
         </div>
     </div>
 </section>
+<div class="section-bottom-logo"><img src="logo.png" alt="OMNI"></div>
 </div>
 
 <!-- Signature -->
